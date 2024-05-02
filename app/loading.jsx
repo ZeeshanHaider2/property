@@ -11,8 +11,8 @@ const loadingPage = ({loading}) => {
        color='blue'
        loading={loading}
        cssOverride={override}
-       size={150}ia-label="Loading Spinner"
-       data-testid="loader"
+       size={150}
+       aria-label="Loading Spinner"
        />
 
   )
