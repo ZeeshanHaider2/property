@@ -1,6 +1,7 @@
 import '@/assets/styles/globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import AuthProvider from '@/components/AuthProvider';
 export const metadata = {
     title: 'PropertyRental | Find the Perfect Rental',
     description: 'Find your dream rental property',
@@ -8,6 +9,7 @@ export const metadata = {
 }
 const Mainlayout = ({children}) => {
   return (
+    <AuthProvider>
     <html lang ='en'>
      <body>
         <Navbar/>
@@ -15,6 +17,7 @@ const Mainlayout = ({children}) => {
         <Footer/>
      </body>
     </html> 
+    </AuthProvider>
   );
 };
 
