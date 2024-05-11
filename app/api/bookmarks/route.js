@@ -10,8 +10,6 @@ export const GET = async () => {
   try {
     await connectDB();
 
-    const { propertyId } = await request.json();
-
     const sessionUser = await getSessionUser();
 
     if (!sessionUser || !sessionUser.userId) {
