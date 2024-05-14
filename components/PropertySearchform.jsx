@@ -68,4 +68,4 @@ const PropertySearchForm = () => {
     </form>
   );
 };
-export default PropertySearchForm;
+export default PropertySearchForm
