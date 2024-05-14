@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import InfoBoxes from '@/components/InfoBoxes';
 import HomeProperties from '@/components/HomeProperties';
 //import connectDB from '@/config/database';
+import FeaturedProperties from '@/components/FeaturedProperties';
 
 const Homepage = () => {
   //await connectDB();
@@ -9,6 +10,7 @@ const Homepage = () => {
     <>
       <Hero/>
       <InfoBoxes/>
+      <FeaturedProperties/>
       <HomeProperties/>
     </>
   )
