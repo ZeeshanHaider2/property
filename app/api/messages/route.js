@@ -59,7 +59,7 @@ export const POST = async (request) => {
     // Can not send message to self
     if (user.id === recipient) {
       return new Response(
-        JSON.stringify({ message: "You must be logged in to send a message" }),
+        JSON.stringify({ message: "Can not send message to self" }),
         { status: 401 }
       );
     }
