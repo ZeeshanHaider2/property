@@ -7,8 +7,8 @@ import { fetchProperties } from '@/utils/requests';
 const HomeProperties = async() => {
 const data = await fetchProperties();
 
-//const recentProperties = data.properties.sort(()=> Math.random()- Math.random()).slice(0,3);
-const recentProperties = data.properties || [];
+const recentProperties = data.properties.sort(()=> Math.random()- Math.random()).slice(0,3);
+  
   return (
     <>
     <section className="px-4 py-6">
